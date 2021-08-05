@@ -9,7 +9,7 @@ instructions = [
             username VARCHAR(50) UNIQUE NOT NULL,
             password VARCHAR(100) NOT NULL
         );
-    """
+    """,
     """
         CREATE TABLE todo (
             id INT PRIMARY KEY AUTO_INCREMENT,
