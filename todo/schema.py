@@ -18,7 +18,6 @@ instructions = [
             description TEXT NOT NULL,
             completed BOOLEAN NOT NULL,
             FOREIGN KEY (created_by) REFERENCES user (id)
-            
         );
     """
 ]
