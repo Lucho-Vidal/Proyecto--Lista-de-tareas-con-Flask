@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block hearder %}
+{% extends 'base.html' %} {% block header %}
 <h1>{% block title %}Todos{% endblock %}</h1>
 {% if g.user %}
 <a class="action" href="{{ url_for('todo.create') }}">Nuevo</a> {% else %}
@@ -12,7 +12,7 @@
                 {% if todo['completed']== 1 %}
                 <strike>{{todo['description']}} </strike> {% else %} {{ todo ['description']}} {% endif %}
             </h1>
-            <div class="about">{{ todo['created_at'].strftime('%Y-%m-%d') }} </div>
+            <div class="about">{{ todo['created_at'].strftime('%A, %d de %B de %Y, %H:%M:%S Hs.') }} </div>
             <a class="action" href="{{ url_for('todo.update', id=todo['id']) }}">Editar</a>
         </div>
     </li>
