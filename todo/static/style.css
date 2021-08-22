@@ -1,0 +1,225 @@
+html {
+    font-family: 'Rufina', sans-serif;
+    color: #9bd3eb;
+}
+
+body {
+    background-color: #ddd;
+    background: url(../static/bg.jpeg) no-repeat center top;
+    background-size: cover;
+}
+
+.login-box {
+    width: 320px;
+    height: 420px;
+    background: #111;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    margin: 150px auto;
+    box-sizing: border-box;
+    padding: 30px 30px;
+    border-radius: 5px;
+}
+
+.login-box .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 80px;
+    margin-top: -140px;
+    background: #AAA;
+}
+
+.login-box h1 {
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+
+.login-box input {
+    /* width: 100%; */
+    margin-bottom: 20px;
+}
+
+.login-box input[id="username"],
+.login-box input[type="password"] {
+    border: none;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #f84f07;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 50%;
+    margin-left: 70px;
+    margin-top: 50px;
+    transition: 0.5s;
+}
+
+.login-box input[type="submit"]:hover {
+    cursor: pointer;
+    /* background: #ffc107; */
+    color: #000;
+    margin-left: 0px;
+    width: 100%;
+}
+
+.login-box a {
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+
+/* base */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #eee;
+    padding: 10px 20px;
+}
+
+.header-h1 {
+    text-align: center;
+}
+
+.action {
+    margin-left: 93%;
+}
+
+.todo {
+    list-style: none;
+}
+
+nav ul li span {
+    font-family: 'Rubik', sans-serif;
+    color: #d11a02fa;
+    font-weight: 900;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li {
+    padding: 0 10px;
+    list-style: none;
+}
+
+a {
+    transition: color 0.3s ease;
+    font-family: 'Rubik', sans-serif;
+    color: #034d6c;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover {
+    color: #f84f07;
+}
+
+nav h1 {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    padding: 0 30px;
+    color: #034d6c;
+    font-weight: 700;
+}
+
+.action {
+    background-color: #f84f07;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+a.action {
+    color: #fff;
+    margin-top: 50px;
+    transition: 0.3s;
+}
+
+a.action:hover {
+    padding: 6px 25px;
+    background-color: #001118;
+}
+
+.nuevo-box {
+    width: 320px;
+    height: auto;
+    background: #999;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px 30px;
+    border-radius: 5px;
+}
+
+.nuevo-box h1 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.nuevo-box input[id="description"] {
+    border: none;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.nuevo-box input[type="submit"] {
+    border: none;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    outline: none;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.nuevo-box input[class="danger"] {
+    background: #f84f07;
+}
+
+.nuevo-box input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ffc10763;
+    color: #fff;
+    margin-left: 0px;
+    width: 100%;
+}

@@ -26,14 +26,14 @@ def init_db():
     db, c = get_db()
  
     for i in instructions:
-        c.execute(i)#
+        c.execute(i)
  
     db.commit()
  
 @click.command('init-db')
 @with_appcontext           
 def init_db_command():
-     init_db()#
+     init_db()
      click.echo('Base de datos inicializada')
  
 def init_app(app):

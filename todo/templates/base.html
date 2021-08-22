@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <title>{% block title %}{% endblock %} - Todo List </title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }} ">
-<nav>
-    <h1>Todo List</h1>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+
+
+<nav class="navbar">
+    <h1 class="logo">Todo List</h1>
     <ul>
         {% if g.user %}
         <li><span>{{ g.user['username']}} </span> </li>
+        <li><a href="{{ url_for('todo.index')}} ">Inicio</a></li>
         <li><a href="{{url_for('auth.logout')}} ">Cerrar sesión</a> </li>
         {% else %}
         <li><a href="{{url_for('auth.register')}} ">Registrarse</a> </li>
         <li><a href="{{url_for('auth.login')}} ">Iniciar sesión</a> </li>
         {% endif %}
     </ul>
+
 </nav>
 <section class="content">
     <header>
